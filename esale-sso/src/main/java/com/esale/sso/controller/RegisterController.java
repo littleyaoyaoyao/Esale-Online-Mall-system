@@ -6,10 +6,12 @@ import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.esale.common.pojo.EsaleResult;
 import com.esale.common.utils.ExceptionUtil;
+import com.esale.pojo.TbUser;
 import com.esale.sso.service.RegisterService;
 
 
@@ -31,6 +33,18 @@ public class RegisterController {
 				mappingJacksonValue.setJsonpFunction(callback);
 				return mappingJacksonValue;
 			}
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return EsaleResult.build(500, ExceptionUtil.getStackTrace(e));
+		}
+	}
+	
+	@RequestMapping(value="/register" ,method=RequestMethod.POST)
+	@ResponseBody
+	public EsaleResult register(TbUser user){
+		try {
+			EsaleResult result = registerService.register(user);
 			return result;
 		} catch (Exception e) {
 			e.printStackTrace();
