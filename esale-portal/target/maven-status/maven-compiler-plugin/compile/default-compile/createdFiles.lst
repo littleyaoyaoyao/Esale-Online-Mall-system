@@ -1,0 +1,3 @@
+com\esale\portal\controller\IndexController.class
+com\esale\portal\service\impl\StaticPageServiceImpl.class
+com\esale\portal\service\StaticPageService.class

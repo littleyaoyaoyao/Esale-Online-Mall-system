@@ -1,0 +1,3 @@
+com\esale\sso\service\RegisterService.class
+com\esale\sso\controller\RegisterController.class
+com\esale\sso\service\impl\RegisterServiceImpl.class
