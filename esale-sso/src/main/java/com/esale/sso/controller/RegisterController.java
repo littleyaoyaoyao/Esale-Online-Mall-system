@@ -40,6 +40,13 @@ public class RegisterController {
 		}
 	}
 	
+	
+	/**
+	 * localhost:8084/user/register/
+	 * 用户注册功能
+	 * @param user
+	 * @return
+	 */
 	@RequestMapping(value="/register" ,method=RequestMethod.POST)
 	@ResponseBody
 	public EsaleResult register(TbUser user){
