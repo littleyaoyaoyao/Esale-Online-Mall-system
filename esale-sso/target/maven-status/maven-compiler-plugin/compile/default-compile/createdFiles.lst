@@ -1,3 +1,8 @@
-com\esale\sso\service\RegisterService.class
-com\esale\sso\controller\RegisterController.class
+com\esale\sso\service\impl\LoginServiceImpl.class
+com\esale\sso\component\JedisClient.class
 com\esale\sso\service\impl\RegisterServiceImpl.class
+com\esale\sso\service\RegisterService.class
+com\esale\sso\controller\LoginController.class
+com\esale\sso\controller\RegisterController.class
+com\esale\sso\service\LoginService.class
+com\esale\sso\component\impl\JedisClientSingle.class

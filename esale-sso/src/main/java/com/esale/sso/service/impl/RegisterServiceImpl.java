@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
 import com.alibaba.druid.sql.dialect.oracle.ast.stmt.OracleIfStatement.Else;
 import com.esale.common.pojo.EsaleResult;
@@ -82,6 +83,7 @@ public class RegisterServiceImpl implements RegisterService {
 		//若信息都没有问题，则插入数据
 		user.setCreated(new Date());
 		user.setUpdated(new Date());
+		user.setPassword(DigestUtils.md5DigestAsHex(user.getPassword().getBytes()));
 		userMapper.insert(user);
 		
 		return EsaleResult.ok();

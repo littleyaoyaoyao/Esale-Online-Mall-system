@@ -1,3 +1,8 @@
+F:\Esale\esale-sso\src\main\java\com\esale\sso\component\JedisClient.java
 F:\Esale\esale-sso\src\main\java\com\esale\sso\service\RegisterService.java
+F:\Esale\esale-sso\src\main\java\com\esale\sso\service\impl\LoginServiceImpl.java
 F:\Esale\esale-sso\src\main\java\com\esale\sso\service\impl\RegisterServiceImpl.java
+F:\Esale\esale-sso\src\main\java\com\esale\sso\service\LoginService.java
+F:\Esale\esale-sso\src\main\java\com\esale\sso\component\impl\JedisClientSingle.java
+F:\Esale\esale-sso\src\main\java\com\esale\sso\controller\LoginController.java
 F:\Esale\esale-sso\src\main\java\com\esale\sso\controller\RegisterController.java
