@@ -51,7 +51,7 @@
 	<servlet-mapping>
 		<servlet-name>esale-soo</servlet-name>
 		<!-- 使用/会导致静态资源被拦截 ，需要在springmvc.xml中配置-->
-		<url-pattern>/*</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
 	
