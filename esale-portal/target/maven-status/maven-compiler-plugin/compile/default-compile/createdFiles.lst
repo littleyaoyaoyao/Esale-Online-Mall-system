@@ -1,3 +1,6 @@
-com\esale\portal\controller\IndexController.class
+com\esale\portal\interceptor\LoginInterceptor.class
+com\esale\portal\service\UserService.class
 com\esale\portal\service\impl\StaticPageServiceImpl.class
+com\esale\portal\service\impl\UserServiceImpl.class
+com\esale\portal\controller\IndexController.class
 com\esale\portal\service\StaticPageService.class
