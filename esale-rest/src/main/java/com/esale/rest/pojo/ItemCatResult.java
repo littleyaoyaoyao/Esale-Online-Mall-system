@@ -1,16 +1,14 @@
 package com.esale.rest.pojo;
 
-import java.util.List;
-
 public class ItemCatResult {
 
-	private List data;
+	private Object data;
 
-	public List getData() {
+	public Object getData() {
 		return data;
 	}
 
-	public void setData(List data) {
+	public void setData(Object data) {
 		this.data = data;
 	}
 	

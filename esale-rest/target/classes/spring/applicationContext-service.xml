@@ -17,6 +17,6 @@
 		<constructor-arg name="port" value="6379"></constructor-arg>
 	</bean>
 	<!-- 配置redis客户端实现类 -->
-	<bean id="jedisClientSingle" class="com.esale.rest.component.impl.JedisClientSingle"/>
+	<bean id="JedisClientPool" class="com.esale.rest.dao.impl.JedisClientPool"/>
 	
 </beans>
