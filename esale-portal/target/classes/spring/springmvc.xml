@@ -19,10 +19,10 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
-	<mvc:interceptors>
+	<!-- <mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**"/>
 			<bean class="com.esale.portal.interceptor.LoginInterceptor"></bean>
 		</mvc:interceptor>
-	</mvc:interceptors>
+	</mvc:interceptors> -->
 </beans>        
